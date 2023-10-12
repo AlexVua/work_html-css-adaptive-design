@@ -1,0 +1,2026 @@
+@use "rules" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "GraphikLCG", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.underlined_text {
+  text-decoration: underline;
+}
+
+.header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+  .block_navigation {
+    padding: 25px 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navigation {
+      display: flex;
+      align-items: center;
+
+      .lokalise_logo {
+        margin-right: 51px;
+        flex-shrink: 0;
+      }
+
+      .nav {
+        display: flex;
+        column-gap: 57px;
+
+        a {
+          font-size: 15px;
+          line-height: 20px;
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .login_link {
+      display: inline-flex;
+      margin-right: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 45px;
+      color: #000;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 0 32px;
+    }
+
+    .try_link {
+      display: inline-flex;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 45px;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid $button-bg-color;
+      background-color: $button-bg-color;
+      padding: 0 22px;
+    }
+  }
+}
+
+/* ========== top_section ========== */
+
+.block_accelerate_localization {
+  padding: 129px 67px 172px 75px;
+  display: flex;
+
+  .topic_accelerate_localization {
+    margin-bottom: 51px;
+    max-width: 552px;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .paragraph_accelerate_localization {
+    margin-bottom: 50px;
+    max-width: 471px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .links_accelerate_localization {
+    margin-bottom: 25px;
+
+    .link_try {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 60px;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid $button-bg-color;
+      background-color: $button-bg-color;
+      padding: 21px 42px;
+    }
+
+    .link_book {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 60px;
+      color: #000;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 21px 29px;
+    }
+  }
+
+  .try_all_14_days {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .image_accelerate_localization {
+    margin-top: 22px;
+  }
+}
+
+/* ========== preferred_companies_section ========== */
+
+.preferred_companies_section {
+  background-color: $bc-color-companies;
+
+  .block_preferred_companies {
+    padding: 108px 95px 104px;
+    display: flex;
+    flex-direction: column;
+
+    .topic_preferred_companies {
+      margin: 0 auto 69px;
+      max-width: 720px;
+      font-weight: 600;
+      font-size: $topic-font-size;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    .logo_companies {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 30px;
+    }
+  }
+}
+
+/* ========== starting_positions_section ========== */
+
+.blocks_starting_positions {
+  padding: 90px 75px 150px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15rem;
+
+  .sections_starting_positions {
+    @include sections_starting_positions;
+
+    .topics_starting_positions {
+      @include topics_starting_positions;
+    }
+
+    .paragraphs_starting_positions {
+      margin-bottom: 30px;
+      max-width: 520px;
+      font-weight: 400;
+      font-size: $paragraph-font-size;
+      line-height: 30px;
+    }
+
+    .links_starting_positions {
+      @include links_starting_positions(#000);
+    }
+  }
+}
+
+/* ========== what_can_lokalise_section ========== */
+
+.what_can_lokalise_section {
+  background-color: $bc-color-what-can;
+
+  .block_what_can_lokalise {
+    padding: 120px 117px 147px 126px;
+
+    .topic_what_can_lokalise {
+      margin: 0 auto 79px;
+      font-weight: 600;
+      font-size: $topic-font-size;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    .content_what_can_lokalise {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 75px;
+
+      .blocks_content_what_can_lokalise {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .images_content_what_can_lokalise {
+          margin-bottom: 23px;
+        }
+
+        .topics_text_content_what_can_lokalise {
+          margin-bottom: 23px;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 35px;
+          text-align: center;
+        }
+
+        .paragraphs_text_content_what_can_lokalise {
+          max-width: 330px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* ========== teams_productivity_section ========== */
+
+.block_teams_productivity {
+  padding: 154px 75px 178px;
+
+  .topic_teams_productivity {
+    margin-bottom: 75px;
+    font-weight: 600;
+    font-size: $topic-font-size;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .content_teams_productivity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    .images_content_teams_productivity {
+      margin-bottom: 50px;
+    }
+
+    .topics_content_teams_productivity {
+      margin-bottom: 34px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .paragraphs_content_teams_productivity {
+      margin-bottom: 25px;
+      max-width: 407px;
+      font-weight: 400;
+      font-size: $paragraph-font-size;
+      line-height: 30px;
+    }
+
+    .links_content_teams_productivity {
+      font-weight: 400;
+      font-size: $links-font-size;
+      line-height: 30px;
+      color: #000;
+    }
+  }
+}
+
+/* ========== edward_cooper_section ========== */
+
+.edward_cooper_section {
+  background-color: $bc-color-edward-cooper;
+
+  .block_edward_cooper {
+    padding: 63px 75px 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quote_edward_cooper {
+    display: block;
+    margin-bottom: 23px;
+    max-width: 900px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .signature_edward_cooper {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .image_company_edward_cooper {
+    margin-top: 10px;
+  }
+}
+
+/* ========== cake_section ========== */
+
+.cake_section {
+  background-color: $bc-color-cake;
+
+  .block_cake {
+    padding: 80px 138px 84px 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content_cake_left {
+      padding-right: 124px;
+      display: flex;
+      align-items: center;
+      column-gap: 67px;
+      border-right: 2px solid;
+
+      .topic_cake {
+        max-width: 461px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 50px;
+      }
+    }
+
+    .content_cake_right {
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      column-gap: 70px;
+    }
+  }
+}
+
+/* ========== integrate_lokalise_section ========== */
+
+.block_integrate_lokalise {
+  padding: 165px 209px 254px 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .topic_integrate_lokalise {
+    margin-bottom: 10px;
+    max-width: 791px;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+  }
+
+  .paragraph_integrate_lokalise {
+    margin-bottom: 30px;
+    max-width: 539px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .image_integrate_lokalise {
+    margin-bottom: 35px;
+  }
+
+  .link_integrate_lokalise {
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    background-color: $button-bg-color;
+  }
+}
+
+/* ========== localization_easy_section ========== */
+
+.localization_easy_section {
+  background-color: $bc-color-companies;
+
+  .block_localization_easy {
+    padding: 119px 328px 161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topic_localization_easy {
+      max-width: 784px;
+      margin-bottom: 29px;
+      font-weight: 600;
+      font-size: 65px;
+      line-height: 75px;
+      text-align: center;
+    }
+
+    .paragraph_localization_easy {
+      margin-bottom: 54px;
+      font-weight: 400;
+      font-size: $paragraph-font-size;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .link_localization_easy {
+      padding: 0 40px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 60px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #000;
+      background-color: #000;
+    }
+  }
+}
+
+/* ========== case_studies_section ========== */
+
+.case_studies_section {
+  background-color: $bc-color-case-studies;
+
+  .block_case_studies {
+    padding: 97px 75px 95px;
+    display: flex;
+    justify-content: space-between;
+
+    .content_case_studies {
+      margin-right: 70px;
+      display: flex;
+      flex-direction: column;
+
+      .topic_content_case_studies {
+        margin-bottom: 28px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .image_content_case_studies {
+        margin-bottom: 31px;
+      }
+
+      .logo_content_case_studies {
+        margin-bottom: 11px;
+      }
+
+      .paragraph_content_case_studies {
+        margin-bottom: 15px;
+        max-width: 290px;
+        font-weight: 400;
+        font-size: $paragraph-font-size;
+        line-height: 30px;
+      }
+
+      .link_content_case_studies {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    .content_information_case_studies {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+
+      .topics_content_information_case_studies {
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .links_content_information_case_studies {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* ========== border_section ========== */
+
+.border_section {
+  background-color: $bc-color-case-studies;
+  padding: 0 75px;
+
+  .border {
+    max-width: 1290px;
+    margin: 0 auto;
+    border-top: 2px solid;
+  }
+}
+
+/* ========== footer_section ========== */
+
+.footer_section {
+  background-color: $bc-color-case-studies;
+
+  .block_footer {
+    padding: 52px 151px 43px 75px;
+    display: flex;
+    justify-content: space-between;
+
+    .block_left_footer {
+      display: flex;
+      column-gap: 14px;
+
+      .paragraph_footer {
+        max-width: 301px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    .block_right_footer {
+      display: flex;
+      flex-direction: column;
+
+      .copirate_footer {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      .rights_footer {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+/* =============== Responsive Web Design (mw: 1024px) =============== */
+
+@media all and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .header {
+    .block_navigation {
+      padding: 25px 40px;
+
+      .navigation {
+        flex-wrap: wrap;
+
+        .lokalise_logo {
+          margin-right: 40px;
+          margin-bottom: 20px;
+        }
+
+        .nav {
+          column-gap: 37px;
+        }
+      }
+
+      .login_free_links {
+        .login_link {
+          margin-bottom: 10px;
+          font-size: 14px;
+          line-height: 38px;
+          padding: 0 28px;
+        }
+
+        .try_link {
+          font-size: 14px;
+          line-height: 38px;
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+
+  /* ========== top_section ========== */
+
+  .top_section {
+    .block_accelerate_localization {
+      padding: 69px 40px 102px 40px;
+
+      .content_accelerate_localization {
+        .topic_accelerate_localization {
+          margin-bottom: 31px;
+          max-width: 752px;
+          font-size: 55px;
+          line-height: 60px;
+        }
+
+        .paragraph_accelerate_localization {
+          margin-bottom: 40px;
+          max-width: 400px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        .links_accelerate_localization {
+          margin-bottom: 23px;
+
+          .link_try {
+            font-size: 14px;
+            line-height: 60px;
+            padding: 18px 32px;
+          }
+
+          .link_book {
+            font-size: 14px;
+            line-height: 60px;
+            padding: 18px 19px;
+          }
+        }
+
+        .try_all_14_days {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+
+      .image_accelerate_localization {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  /* ========== preferred_companies_section ========== */
+
+  .preferred_companies_section {
+    .block_preferred_companies {
+      padding: 78px 40px 74px;
+
+      .topic_preferred_companies {
+        margin: 0 auto 59px;
+        max-width: 720px;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  /* ========== starting_positions_section ========== */
+
+  .starting_positions_section {
+    .blocks_starting_positions {
+      padding: 70px 40px 120px;
+      row-gap: 8rem;
+
+      .sections_starting_positions {
+        max-width: 1290px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content_starting_positions {
+          .topics_starting_positions {
+            margin-bottom: 20px;
+            max-width: 450px;
+            font-size: 40px;
+            line-height: 47px;
+          }
+
+          .paragraphs_starting_positions {
+            margin-bottom: 30px;
+            max-width: 420px;
+            font-size: 16px;
+            line-height: 27px;
+          }
+
+          .links_starting_positions {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+
+        .images_starting_positions {
+          max-width: 45%;
+        }
+      }
+    }
+  }
+
+  /* ========== what_can_lokalise_section ========== */
+
+  .what_can_lokalise_section {
+    .block_what_can_lokalise {
+      padding: 80px 40px 107px;
+
+      .topic_what_can_lokalise {
+        margin: 0 auto 59px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .content_what_can_lokalise {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 65px;
+
+        .blocks_content_what_can_lokalise {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .images_content_what_can_lokalise {
+            max-width: 40%;
+            margin-bottom: 20px;
+          }
+
+          .text_content_what_can_lokalise {
+            .topics_text_content_what_can_lokalise {
+              margin-bottom: 16px;
+              font-size: 22px;
+              line-height: 35px;
+            }
+
+            .paragraphs_text_content_what_can_lokalise {
+              max-width: 250px;
+              font-size: 16px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== teams_productivity_section ========== */
+
+  .teams_productivity_section {
+    .block_teams_productivity {
+      padding: 84px 40px 98px;
+
+      .topic_teams_productivity {
+        margin-bottom: 55px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .content_teams_productivity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+
+        .blocks_content_teams_productivity {
+          .images_content_teams_productivity {
+            max-width: 40%;
+            margin-bottom: 35px;
+          }
+
+          .text_content_teams_productivity {
+            .topics_content_teams_productivity {
+              margin-bottom: 20px;
+              font-size: 25px;
+              line-height: 35px;
+            }
+
+            .paragraphs_content_teams_productivity {
+              margin-bottom: 20px;
+              max-width: 280px;
+              font-size: 16px;
+              line-height: 26px;
+            }
+
+            .links_content_teams_productivity {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== edward_cooper_section ========== */
+
+  .edward_cooper_section {
+    .block_edward_cooper {
+      padding: 53px 40px 80px;
+
+      .content_edward_cooper {
+        .quote_edward_cooper {
+          margin-bottom: 20px;
+          max-width: 815px;
+          font-size: 25px;
+          line-height: 35px;
+        }
+
+        .signature_edward_cooper {
+          font-size: 14px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+
+  /* ========== cake_section ========== */
+
+  .cake_section {
+    .block_cake {
+      padding: 60px 40px 64px 40px;
+
+      .content_cake_left {
+        padding-right: 54px;
+        display: flex;
+        align-items: center;
+        column-gap: 37px;
+
+        .topic_cake {
+          max-width: 400px;
+          font-size: 30px;
+          line-height: 38px;
+        }
+      }
+
+      .content_cake_right {
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+      }
+    }
+  }
+
+  /* ========== integrate_lokalise_section ========== */
+
+  .integrate_lokalise_section {
+    .block_integrate_lokalise {
+      padding: 90px 40px;
+
+      .topic_integrate_lokalise {
+        font-size: 50px;
+        line-height: 55px;
+      }
+
+      .paragraph_integrate_lokalise {
+        font-size: 23px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .image_integrate_lokalise {
+        max-width: 80%;
+        margin-bottom: 35px;
+      }
+
+      .link_integrate_lokalise {
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 55px;
+      }
+    }
+  }
+
+  /* ========== localization_easy_section ========== */
+
+  .localization_easy_section {
+    .block_localization_easy {
+      padding: 90px 40px;
+
+      .topic_localization_easy {
+        max-width: 650px;
+        margin-bottom: 25px;
+        font-size: 50px;
+        line-height: 55px;
+      }
+
+      .paragraph_localization_easy {
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .link_localization_easy {
+        padding: 0 35px;
+        font-size: 16px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  /* ========== case_studies_section ========== */
+
+  .case_studies_section {
+    .block_case_studies {
+      padding: 70px 35px;
+      column-gap: 40px;
+
+      .content_case_studies {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+
+        .image_logo_content_case_studies {
+          .topic_content_case_studies {
+            margin-bottom: 23px;
+            font-size: 30px;
+            line-height: 40px;
+          }
+
+          .image_content_case_studies {
+            max-width: 90%;
+            margin-bottom: 30px;
+          }
+
+          .logo_content_case_studies {
+            margin-bottom: 11px;
+          }
+        }
+
+        .text_content_case_studies {
+          .paragraph_content_case_studies {
+            margin-bottom: 15px;
+            max-width: 260px;
+            font-size: 16px;
+            line-height: 25px;
+          }
+
+          .link_content_case_studies {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+      .content_information_case_studies {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+
+        .topics_content_information_case_studies {
+          margin-bottom: 5px;
+          font-size: 18px;
+          line-height: 23px;
+        }
+
+        .links_content_information_case_studies {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  /* ========== border_section ========== */
+
+  .border_section {
+    padding: 0 40px;
+
+    .border {
+      max-width: 1024px;
+    }
+  }
+
+  /* ========== footer_section ========== */
+
+  .footer_section {
+    .block_footer {
+      padding: 40px;
+    }
+  }
+}
+
+/* =============== Responsive Web Design (mw: 768px) =============== */
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header {
+    .block_navigation {
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+        .lokalise_logo {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          row-gap: 20px;
+          column-gap: 30px;
+
+          a {
+            font-size: 15px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      .login_free_links {
+        .login_link {
+          margin-bottom: 0;
+          font-size: 12px;
+          line-height: 30px;
+          padding: 0 30px;
+        }
+
+        .try_link {
+          font-size: 12px;
+          line-height: 30px;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  /* ========== top_section ========== */
+
+  .top_section {
+    .block_accelerate_localization {
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+
+      .content_accelerate_localization {
+        display: flex;
+        flex-direction: column;
+
+        .topic_accelerate_localization {
+          max-width: 600px;
+          margin-bottom: 20px;
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        .paragraph_accelerate_localization {
+          max-width: 570px;
+          margin-bottom: 20px;
+          font-size: 17px;
+          line-height: 25px;
+        }
+
+        .links_accelerate_localization {
+          margin-bottom: 15px;
+
+          .link_try {
+            font-size: 13px;
+            padding: 14px 25px;
+          }
+
+          .link_book {
+            font-size: 13px;
+            padding: 14px 14px;
+          }
+        }
+
+        .try_all_14_days {
+          font-size: 12px;
+        }
+      }
+
+      .image_accelerate_localization {
+        margin: 0 0 30px;
+        max-width: 50%;
+      }
+    }
+  }
+
+  /* ========== preferred_companies_section ========== */
+
+  .preferred_companies_section {
+    .block_preferred_companies {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+
+      .topic_preferred_companies {
+        margin: 0 auto 25px;
+        max-width: 480px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .logo_companies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo_companie {
+          max-width: 10%;
+        }
+      }
+    }
+  }
+
+  /* ========== starting_positions_section ========== */
+
+  .starting_positions_section {
+    .blocks_starting_positions {
+      padding: 45px 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+
+      .sections_starting_positions {
+        max-width: 768px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 60px;
+
+        .content_starting_positions {
+          .topics_starting_positions {
+            margin-bottom: 20px;
+            max-width: 379px;
+            font-size: 30px;
+            line-height: 32px;
+          }
+
+          .paragraphs_starting_positions {
+            margin-bottom: 25px;
+            max-width: 450px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+
+          .links_starting_positions {
+            font-size: 18px;
+            line-height: 20px;
+          }
+        }
+
+        .images_starting_positions {
+          max-width: 43%;
+        }
+      }
+    }
+  }
+
+  /* ========== what_can_lokalise_section ========== */
+
+  .what_can_lokalise_section {
+    .block_what_can_lokalise {
+      padding: 40px 20px;
+
+      .topic_what_can_lokalise {
+        margin: 0 auto 30px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .content_what_can_lokalise {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        row-gap: 35px;
+
+        .blocks_content_what_can_lokalise {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .images_content_what_can_lokalise {
+            margin-bottom: 10px;
+            max-width: 35%;
+          }
+
+          .text_content_what_can_lokalise {
+            .topics_text_content_what_can_lokalise {
+              margin-bottom: 8px;
+              font-size: 20px;
+              line-height: 35px;
+            }
+
+            .paragraphs_text_content_what_can_lokalise {
+              max-width: 210px;
+              font-size: 13px;
+              line-height: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== teams_productivity_section ========== */
+
+  .teams_productivity_section {
+    .block_teams_productivity {
+      padding: 40px 20px;
+
+      .topic_teams_productivity {
+        margin-bottom: 30px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .content_teams_productivity {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+
+        .blocks_content_teams_productivity {
+          display: flex;
+          column-gap: 25px;
+
+          .images_content_teams_productivity {
+            max-width: 25%;
+            margin-bottom: 25px;
+          }
+
+          .text_content_teams_productivity {
+            .topics_content_teams_productivity {
+              margin-bottom: 10px;
+              font-size: 25px;
+              line-height: 40px;
+            }
+
+            .paragraphs_content_teams_productivity {
+              margin-bottom: 20px;
+              max-width: 407px;
+              font-size: 13px;
+              line-height: 23px;
+            }
+
+            .links_content_teams_productivity {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== edward_cooper_section ========== */
+
+  .edward_cooper_section {
+    .block_edward_cooper {
+      padding: 40px 20px;
+
+      .content_edward_cooper {
+        .quote_edward_cooper {
+          margin-bottom: 15px;
+          max-width: 520px;
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        .signature_edward_cooper {
+          font-size: 13px;
+          line-height: 14px;
+        }
+
+        .image_company_edward_cooper {
+          max-width: 16%;
+          margin-top: 10px;
+        }
+      }
+
+      .image_edward_cooper {
+        max-width: 25%;
+      }
+    }
+  }
+
+  /* ========== cake_section ========== */
+
+  .cake_section {
+    .block_cake {
+      padding: 40px 20px;
+
+      .content_cake_left {
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+
+        .topic_cake {
+          max-width: 325px;
+          font-size: 28px;
+          line-height: 30px;
+        }
+      }
+
+      .content_cake_right {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+      }
+    }
+  }
+
+  /* ========== integrate_lokalise_section ========== */
+
+  .integrate_lokalise_section {
+    .block_integrate_lokalise {
+      padding: 40px 20px;
+
+      .topic_integrate_lokalise {
+        margin-bottom: 5px;
+        max-width: 480px;
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      .paragraph_integrate_lokalise {
+        margin-bottom: 20px;
+        max-width: 480px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      .image_integrate_lokalise {
+        max-width: 70%;
+        margin-bottom: 20px;
+      }
+
+      .link_integrate_lokalise {
+        padding: 0 15px;
+        font-size: 13px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  /* ========== localization_easy_section ========== */
+
+  .localization_easy_section {
+    .block_localization_easy {
+      padding: 40px 20px;
+
+      .topic_localization_easy {
+        max-width: 445px;
+        margin-bottom: 15px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .paragraph_localization_easy {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      .link_localization_easy {
+        padding: 0 25px;
+        font-size: 13px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  /* ========== case_studies_section ========== */
+
+  .case_studies_section {
+    .block_case_studies {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      column-gap: 30px;
+
+      .content_case_studies {
+        margin: 0 0 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .image_logo_content_case_studies {
+          .topic_content_case_studies {
+            margin-bottom: 20px;
+            font-size: 28px;
+            line-height: 38px;
+          }
+
+          .image_content_case_studies {
+            max-width: 95%;
+            margin-bottom: 24px;
+          }
+
+          .logo_content_case_studies {
+            margin-bottom: 10px;
+          }
+        }
+
+        .text_content_case_studies {
+          .paragraph_content_case_studies {
+            margin-bottom: 15px;
+            max-width: 180px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+
+          .link_content_case_studies {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+      .content_information_case_studies {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        row-gap: 23px;
+        column-gap: 40px;
+
+        .topics_content_information_case_studies {
+          margin-bottom: 0;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        .links_content_information_case_studies {
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+
+  /* ========== border_section ========== */
+
+  .border_section {
+    padding: 0 20px;
+
+    .border {
+      max-width: 768px;
+    }
+  }
+
+  /* ========== footer_section ========== */
+
+  .footer_section {
+    .block_footer {
+      padding: 40px 20px;
+
+      .block_left_footer {
+        display: flex;
+        column-gap: 14px;
+
+        .paragraph_footer {
+          max-width: 301px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+
+      .block_right_footer {
+        display: flex;
+        flex-direction: column;
+
+        .copirate_footer {
+          font-size: 12px;
+          line-height: 15px;
+        }
+
+        .rights_footer {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* =============== Responsive Web Design (mw: 480px) =============== */
+
+@media all and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .header {
+    .block_navigation {
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 25px;
+
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+        .lokalise_logo {
+          margin-right: 0;
+        }
+
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          row-gap: 20px;
+          column-gap: 25px;
+
+          a {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+
+      .login_free_links {
+        .login_link {
+          font-size: 12px;
+          line-height: 30px;
+          padding: 0 30px;
+        }
+
+        .try_link {
+          font-size: 12px;
+          line-height: 30px;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  /* ========== top_section ========== */
+
+  .top_section {
+    .block_accelerate_localization {
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+
+      .content_accelerate_localization {
+        display: flex;
+        flex-direction: column;
+
+        .topic_accelerate_localization {
+          margin-bottom: 12px;
+          font-size: 31px;
+          line-height: 38px;
+        }
+
+        .paragraph_accelerate_localization {
+          margin-bottom: 10px;
+          font-size: 17px;
+          line-height: 25px;
+        }
+
+        .links_accelerate_localization {
+          margin-bottom: 10px;
+
+          .link_try {
+            font-size: 12px;
+            padding: 14px 25px;
+          }
+
+          .link_book {
+            font-size: 12px;
+            padding: 14px 14px;
+          }
+        }
+
+        .try_all_14_days {
+          font-size: 12px;
+        }
+      }
+
+      .image_accelerate_localization {
+        margin: 0 0 20px;
+        max-width: 50%;
+      }
+    }
+  }
+
+  /* ========== preferred_companies_section ========== */
+
+  .preferred_companies_section {
+    .block_preferred_companies {
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column;
+
+      .topic_preferred_companies {
+        margin: 0 auto 15px;
+        max-width: 480px;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      .logo_companies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 0;
+
+        .logo_companie {
+          max-width: 13%;
+        }
+      }
+    }
+  }
+
+  /* ========== starting_positions_section ========== */
+
+  .starting_positions_section {
+    .blocks_starting_positions {
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+
+      .sections_starting_positions {
+        max-width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 10px;
+
+        .content_starting_positions {
+          .topics_starting_positions {
+            margin-bottom: 10px;
+            max-width: 480px;
+            font-size: 26px;
+            line-height: 30px;
+          }
+
+          .paragraphs_starting_positions {
+            margin-bottom: 10px;
+            max-width: 480px;
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+          .links_starting_positions {
+            font-size: 17px;
+            line-height: 20px;
+          }
+        }
+
+        .images_starting_positions {
+          max-width: 43%;
+        }
+      }
+    }
+  }
+
+  /* ========== what_can_lokalise_section ========== */
+
+  .what_can_lokalise_section {
+    .block_what_can_lokalise {
+      padding: 30px 15px;
+
+      .topic_what_can_lokalise {
+        margin: 0 auto 20px;
+        font-size: 31px;
+        line-height: 38px;
+      }
+
+      .content_what_can_lokalise {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        row-gap: 35px;
+
+        .blocks_content_what_can_lokalise {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .images_content_what_can_lokalise {
+            margin-bottom: 0;
+            max-width: 30%;
+          }
+
+          .text_content_what_can_lokalise {
+            .topics_text_content_what_can_lokalise {
+              margin-bottom: 0;
+              font-size: 19px;
+              line-height: 35px;
+            }
+
+            .paragraphs_text_content_what_can_lokalise {
+              max-width: 160px;
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== teams_productivity_section ========== */
+
+  .teams_productivity_section {
+    .block_teams_productivity {
+      padding: 30px 15px;
+
+      .topic_teams_productivity {
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 36px;
+      }
+
+      .content_teams_productivity {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+
+        .blocks_content_teams_productivity {
+          display: flex;
+          column-gap: 25px;
+
+          .images_content_teams_productivity {
+            max-width: 15%;
+            margin-bottom: 0;
+          }
+
+          .text_content_teams_productivity {
+            .topics_content_teams_productivity {
+              margin-bottom: 10px;
+              font-size: 18px;
+              line-height: 20px;
+            }
+
+            .paragraphs_content_teams_productivity {
+              margin-bottom: 10px;
+              max-width: 340px;
+              font-size: 12px;
+              line-height: 20px;
+              text-align: justify;
+            }
+
+            .links_content_teams_productivity {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========== edward_cooper_section ========== */
+
+  .edward_cooper_section {
+    .block_edward_cooper {
+      padding: 30px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content_edward_cooper {
+        .quote_edward_cooper {
+          margin-bottom: 12px;
+          max-width: 750px;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .signature_edward_cooper {
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+        .image_company_edward_cooper {
+          max-width: 20%;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  /* ========== cake_section ========== */
+
+  .cake_section {
+    .block_cake {
+      padding: 30px 15px;
+
+      .content_cake_left {
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+
+        .topic_cake {
+          max-width: 280px;
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      .content_cake_right {
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+      }
+    }
+  }
+
+  /* ========== integrate_lokalise_section ========== */
+
+  .integrate_lokalise_section {
+    .block_integrate_lokalise {
+      padding: 30px 15px;
+
+      .topic_integrate_lokalise {
+        margin-bottom: 5px;
+        max-width: 480px;
+        font-size: 28px;
+        line-height: 32px;
+      }
+
+      .paragraph_integrate_lokalise {
+        margin-bottom: 10px;
+        max-width: 480px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      .image_integrate_lokalise {
+        max-width: 70%;
+        margin-bottom: 15px;
+      }
+
+      .link_integrate_lokalise {
+        padding: 0 15px;
+        font-size: 12px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  /* ========== localization_easy_section ========== */
+
+  .localization_easy_section {
+    .block_localization_easy {
+      padding: 30px 15px;
+
+      .topic_localization_easy {
+        max-width: 480px;
+        margin-bottom: 15px;
+        font-size: 28px;
+        line-height: 32px;
+      }
+
+      .paragraph_localization_easy {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      .link_localization_easy {
+        padding: 0 15px;
+        font-size: 12px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  /* ========== case_studies_section ========== */
+
+  .case_studies_section {
+    .block_case_studies {
+      padding: 30px 15px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .content_case_studies {
+        margin: 0 0 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .image_logo_content_case_studies {
+          .topic_content_case_studies {
+            margin-bottom: 14px;
+            font-size: 24px;
+            line-height: 28px;
+          }
+
+          .image_content_case_studies {
+            max-width: 90%;
+            margin-bottom: 16px;
+          }
+
+          .logo_content_case_studies {
+            margin-bottom: 0;
+          }
+        }
+
+        .text_content_case_studies {
+          .paragraph_content_case_studies {
+            margin-bottom: 15px;
+            max-width: 290px;
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          .link_content_case_studies {
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
+      .content_information_case_studies {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        row-gap: 23px;
+        column-gap: 40px;
+
+        .topics_content_information_case_studies {
+          margin-bottom: 0;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        .links_content_information_case_studies {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+
+  /* ========== border_section ========== */
+
+  .border_section {
+    padding: 0 15px;
+
+    .border {
+      max-width: 480px;
+    }
+  }
+
+  /* ========== footer_section ========== */
+
+  .footer_section {
+    .block_footer {
+      padding: 30px 15px;
+      display: flex;
+      justify-content: space-between;
+
+      .block_left_footer {
+        display: flex;
+        column-gap: 14px;
+
+        .paragraph_footer {
+          max-width: 180px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+
+      .block_right_footer {
+        display: flex;
+        flex-direction: column;
+
+        .copirate_footer {
+          font-size: 10px;
+          line-height: 15px;
+        }
+
+        .rights_footer {
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+$bc-color-companies: #ff9c7d;
+$bc-color-what-can: #fff8e4;
+$bc-color-edward-cooper: #c9e8f2;
+$bc-color-cake: #dabc98;
+$bc-color-case-studies: #eee;
+$button-bg-color: #ff6336;
+$paragraph-font-size: 20px;
+$topic-font-size: 50px;
+$links-font-size: 20px;
+
+@mixin sections_starting_positions {
+  max-width: 1290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin topics_starting_positions {
+  margin-bottom: 30px;
+  max-width: 493px;
+  font-weight: 600;
+  font-size: $topic-font-size;
+  line-height: 60px;
+}
+
+@mixin links_starting_positions($color) {
+  font-weight: 600;
+  font-size: $links-font-size;
+  line-height: 30px;
+  color: $color;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "GraphikLCG";
+  src: url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GraphikLCG";
+  src: url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
